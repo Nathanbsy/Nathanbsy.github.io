@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("./footer.css");
+@import url("./header.css");
+@import url("./historia.css");
+@import url("./reserva.css");
+@import url("./menuprincipal.css");
+@import url("./login.css");
+@import url("./menu-hamburguer.css");
+@import url("./carrossel.css");
+
+:root {
+
+    --cor-principal: #151515;
+    --cor-secundaria: #411515;
+    --cor-tercearia: #F8F8F8;
+    --cor-quatro: #373A40;
+
+    --fonte-principal: "Poppins";
+
+    --blur: rgba(255,255,255,0.4)
+}
+
+body {
+    background-color: var(--cor-principal);
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-principal);
+    scroll-behavior: smooth;
+    transition: .4s;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               
+}
+  
+body::-webkit-scrollbar-track {
+    background-color: var(--cor-principal);    
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-quatro);
+    border-radius: 20px;   
+    border: 3px solid var(--cor-principal);
+}
+
+*, html {
+    scroll-behavior: smooth !important;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1728px) {
+    body{
+        overflow-y: hidden;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    body{
+        overflow-y: hidden;
+    }
+}

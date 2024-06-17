@@ -1,0 +1,162 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    background: url(/assets/luxa.org-opacity-changed-Backbround-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.header_login {
+    background-color: var(--cor-principal);
+}
+
+.navegacao_link1 {
+    font-size: 1.2em;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+
+
+}
+.navegacao_link1::before {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 6.2vh;
+    transition: ease-in-out .4s;
+}
+
+.navegacao_link1:hover::before {
+    width: 3%;
+}
+
+.nav_dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 2em;
+    background: rgb(14, 14, 14);
+    border: 5px solid var(--cor-principal);
+    height: 10vh;
+}
+
+/* SECTION LOGIN */
+
+
+.reserva {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+    color: black;
+    font-family: 'Poppins';
+    justify-content: center;
+    margin-top: 10vh;
+
+}
+
+
+
+.divs_reserva { 
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+.box_inteira {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+  
+}
+.box_inteira div {
+    padding: 0 20px;
+}
+
+.box_inteira .h2_reserva {
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Poppins';
+    display: flex;
+    align-self: start;
+    justify-content: end;
+    padding-top: 1.2em;
+    margin: 1.3em;
+}
+
+.divs_reserva label {
+    opacity: 40%;
+
+}
+
+
+.divs_reserva input {
+    margin-top: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    outline: none;
+}
+
+form input, i {
+    margin-left: 8px;
+    background: none;
+
+}
+
+.input_img_reserva {
+    border-bottom: 1px solid black;
+
+}
+.botao_reserva {
+    display: flex;
+    padding: 20px;
+    align-self: end;
+    margin-right: 20px;
+
+}
+
+.botao_reserva button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+
+}
+
+.botao_reserva button:hover {
+    transform: scale(1.05);
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+}
+
+#texto_diferente {
+    color: rgb(124, 0, 0);
+}
+
+button {
+    margin-bottom: 1em;  
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1728px) {
+    .box_inteira .h2_reserva {
+        padding: 1em;
+        margin: 0.5em;
+    }
+}

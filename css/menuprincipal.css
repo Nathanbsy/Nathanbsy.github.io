@@ -1,0 +1,187 @@
+
+.menu { 
+    font-family: var(--fonte-principal);
+    padding: 5em 20vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .4s;
+}
+
+.menu_titulo {
+    font-size: 34px;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+    transition: .4s;
+    cursor: default;
+}
+
+.menu_texto {
+    font-size: 22px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+.container  {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    border-radius: 10px;
+
+}
+
+.tudo_conteiner_menu {
+    display: flex;
+    justify-content: center;
+    padding: 1em 20vw;
+    gap: 3em;
+    transition: .4s;
+}
+
+.container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: ease-in-out .6s;
+
+    
+}
+
+.menu_prato,
+.menu_prato_tras {
+    position: absolute;
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgb(48, 48, 48);
+    backface-visibility: hidden;
+
+}
+
+.menu_prato_tras {
+    background-color: rgb(73, 73, 73);
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu_prato {
+    background: url(../assets/luxa.org-opacity-changed-menu3.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p1{
+    background: url(../assets/luxa.org-opacity-changed-menu1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#p2{
+    background: url(../assets/luxa.org-opacity-changed-menu2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p3 {
+    background: url(../assets/luxa.org-opacity-changed-menu3.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p4{
+    background: url(../assets/luxa.org-opacity-changed-menu4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p5{
+    background: url(../assets/luxa.org-opacity-changed-menu5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p6{
+    background: url(../assets/luxa.org-opacity-changed-menu6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p7{
+    background: url(../assets/luxa.org-opacity-changed-menu7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p8{
+    background: url(../assets/luxa.org-opacity-changed-menu8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #btnLeiaMais {
+    margin-top: 3em;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    cursor: pointer ;
+}
+
+#vermais {
+    display: none;
+    margin-top: 20px;
+}
+
+.menu_titulo:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1728px) {
+    .menu {
+        padding: 5em 12vw 6em;
+    }
+
+    .menu_titulo {
+        margin-top: 1.5em;
+        font-size: 50px;
+    }
+    .menu_texto {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .menu {
+        padding: 7em 10vw;
+    }
+
+    .menu_titulo {
+        font-size: 48px;
+    }
+
+    .menu_texto {
+        font-size: 18px;
+    }
+
+    #p1, #p5, #p4, #p8 {
+        display: none;
+    }
+
+    .tudo_conteiner_menu {
+        gap: 1.5em;
+        margin-right: 0.5em;
+    }
+}
+

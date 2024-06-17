@@ -1,0 +1,101 @@
+.navegacao {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    position: relative;
+    background-color: var(--cor-principal);
+}
+
+.nav_site {
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao_link {
+    position: relative;
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-principal);
+    padding: 1em 1.5em;
+    margin: 1em;
+    font-size: 18px;
+}
+
+.navegacao_link::after {
+    position: absolute;
+    content: " ";
+    height: 2px;
+    bottom: 13px;
+    left: 15px;
+    width: 0%;
+    background-color: white;
+    transition: 0.6s ease-in-out;
+}
+
+.navegacao_link:hover::after {
+    width: 78%;
+}
+
+.logo {
+    display: block;
+    justify-content: right;
+}
+
+.logo_nav {
+    width: 30%;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1728px) {
+    .navegacao {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .logo_nav {
+        width: 35%;
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 430px) {
+    .navegacao_link {
+        display: none;
+    }
+
+    .botao_hamburguer {
+        display: block;
+        justify-content: left;
+    }
+
+    .navegacao {
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+    }
+
+    .logo {
+        width: 5em;
+        height: 5em;
+        justify-content: right;
+        margin-left: auto;
+    }
+
+    .logo_nav {
+        width: 90%;
+        margin: 0.2em 0;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 500px){
+    .logo {
+     display: none;
+    }
+    .navegacao {
+    margin-left: 2em;
+    }
+
+}

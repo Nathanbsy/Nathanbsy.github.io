@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pallazo - Registro</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/icones/Loog.png">
+</head>
+<body>
+    <header class="header_login">
+        <nav class="navegacao1">
+            <a class="navegacao_link1" href="./index.html">Home</a>
+            <a class="navegacao_link1" href="./Cardápio.html">Cardápio</a>
+        </nav>
+    </header>
+    <section class="reserva">
+        <!-- FORMULARIO DA RESERVA -->
+        <form class="box_inteira" method="post" action="mailto:nathan.silva163@etec.sp.gov.br" enctype="text/plain">
+
+            <div class="h2_reserva">
+            <h2>Faça seu <span id="texto_diferente">Registro</span></h2>
+            </div>
+            <div class="divs_reserva"> 
+                <label for="nome">Nome</label>
+                <div class="input_reserva">
+                </div>
+                <div class="input_img_reserva">
+                <i class="bi bi-person-fill"></i> 
+                <input class="input" type="text" name="nome" id="nome" >
+                </div>
+            </div>
+            <div class="divs_reserva">
+                <label for="email">Email</label>
+                <div class="input_reserva">
+                </div>
+                <div class="input_img_reserva">
+                <i class="bi bi-envelope-fill"></i>
+                <input class="input" type="email" name="email" id="email"  required>
+                </div>
+                </div>  
+            
+            <div class="divs_reserva">
+                <label for="telefone">Telefone</label>
+                <div class="input_reserva">
+                </div>
+                <div class="input_img_reserva">
+                <i class="bi bi-telephone-fill"></i>
+                <input class="input" type="number"  name="telefone" id="telefone" required >
+                </div>
+            </div>
+                <div class="divs_reserva">
+                    <label for="senha">Senha</label>
+                    <div class="input_reserva">
+                    </div>
+                    <div class="input_img_reserva">
+                  <i class="bi bi-person-fill-lock"></i>
+                    <input class="input" type="password"  name="senha" id="senha" required >
+                    </div>
+            </div>
+            <div class="botao_reserva">
+                <button onclick="reserva()">Registrar-se</button>
+
+        </div>
+        </form>
+    </section>
+</body>
+</html>

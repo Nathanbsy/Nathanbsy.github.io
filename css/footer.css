@@ -1,0 +1,113 @@
+
+/* Imagens instagram, whatsapp e facebook */
+footer i {
+
+    margin-left: 10px;
+    padding:5px 8px;
+    padding-top: 7px; 
+    border-radius: 18px;
+    color: antiquewhite;
+    font-size: 1.5em;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    transition: all 0.3s ease-in-out;
+}
+
+#social_face:hover {
+    background-color: #405de6;
+}
+#social_insta:hover {
+    background: linear-gradient(45deg, #405de6,#5b51db,#b33ab4,#c135b4,#e1306c,#fd1f1f);
+}
+#social_what:hover{
+    background: linear-gradient(30deg, #1fa70d, #2cdb3b, #0cb868, #30a50c);
+}
+
+
+/* todos as divs */
+.box_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 0 3em;
+    gap: 3em;
+}
+
+
+/* Tiutlos  */
+.titulo_footer {
+    font-size: 16px;
+    font-weight: 800;
+    font-family: var(--fonte-principal);
+    padding-bottom: 1em;
+    transition: 0.2s ease-in-out;
+    cursor: default;
+    
+}
+.titulo_footer:hover {
+    transform: scale(1.07);
+}
+
+.textos_footer {
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+}
+
+footer li {
+    padding: 3.5px;
+}
+
+.redes_sociais {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+
+.box_link {
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    transition: all .4s ease;
+}
+.box_link:hover{
+    text-decoration: underline;
+}
+
+.local_titulo {
+    font-size: 28px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    margin-bottom: 1em;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    margin: 8em 0 5em;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1728px) {
+    .titulo_footer {
+        font-size: 26px;
+    }
+
+   
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .redes_sociais {
+        display: grid;
+    }
+    .social_ancora {
+        padding: 0 1em 1em;
+    }
+
+    .box_footer {
+        margin-left: 1em;
+    }
+
+    .local_container iframe {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
