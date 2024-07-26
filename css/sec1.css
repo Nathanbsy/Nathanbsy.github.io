@@ -1,0 +1,82 @@
+.sec1 {
+    display: flex;
+    font-family: 'Poppins';
+}
+.textos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 60px;
+    gap: 20px;
+
+}
+.textos h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.textos p {
+    font-size: 20px;
+    width: 700px;
+}
+.imagem {
+    background: url(../assets/imagemsec1.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50%;
+}
+#logosec1 {
+    display: none;
+}
+.escondido {
+    display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1320px) {
+    .imagem {
+        display: none;
+        visibility: hidden;
+    }
+    .textos {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        padding: 20px;
+    }
+    .textos p {
+        width: 100%;
+        
+    }
+    #logosec1 {
+        visibility: visible;
+        display: block;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 530px) {
+    .textos .visivel {
+        display: none;
+    }
+    .sec1 {
+        justify-content: center;
+    }
+    .textos {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        padding: 20px;
+        width: 300px;
+    }
+    .textos img {
+        width: 400px;
+    }
+    .escondido {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
+}

@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/sec1.css">
     <link rel="shortcut icon" type="imagex/png" href="./assets/icones/Loog.png">
 
     <title>La Pallazo</title>
 </head>
 
 <body>
-    
-    <nav class="navegacao">
+    <!-- NAVBAR -->
+    <nav id="nav" class="navegacao">
         <button onclick="menuVis()" id="botaaao" class="botao_hamburguer">
             <span class="linha"></span>
             <span class="linha"></span>
@@ -28,21 +29,33 @@
         <div class="nav_site">
             <a class="navegacao_link" href="#">Home</a>
             <a class="navegacao_link" href="#section_reserva">Reserva</a>
-            <a class="navegacao_link" href="./Cardápio.html">Cardápio</a>
-            <a class="navegacao_link" href="./login.html">Registro</a>
+            <a class="navegacao_link" href="/pages/cardápio/index.html">Cardápio</a>
+            <a class="navegacao_link" href="./registro.html">Registro</a>
             <a class="navegacao_link" href="#section_historia">História</a>
         </div>
         <aside id="menuHamburguer" class="menu_hamburguer invisivel">
             <ul class="lista_hamburguer">
                 <li class="lista_menu"><a class="link_hamburguer" href="#">Home</a></li>
                 <li class="lista_menu"><a class="link_hamburguer" href="#section_reserva">Reserva</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="./Cardápio.html">Cardápio</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="./login.html">Registro</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="/pages/cardápio/index.html">Cardápio</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="./registro.html">Registro</a></li>
                 <li class="lista_menu"><a class="link_hamburguer" href="#section_historia">História</a></li>
             </ul>
         </aside>
     </nav>
-    
+    <section class="sec1">
+        <div class="textos">
+
+                <div><h4 style="color:gray">Restaurante</h4></div>
+                <h1 style="color: rgb(128, 36, 36);">La P<span style="color: white;">all</span><span style="color: green;">azo</span></h1>
+                <p class="visivel">O melhor restaurante Italiano de São Paulo, recheado de surpresas e esplêndidos pratos servidos na hora.</p>
+                <p class="escondido">O melhor restaurante Italiano de São Paulo</p>
+                <img id="logosec1" src="./assets/logosec1.png" alt="">
+        </div>
+        <div class="imagem">
+
+        </div>
+    </section>
     <!-- PARTE PRINCIPAL DO SITE -->
     <section class="corpao">
      <main>
@@ -121,7 +134,7 @@
         </section>
 
         
-        
+        <!-- História -->
         <section id="section_historia" class="historia">
             <div class="container_historia">
                 <h2 class="historia_titulo">História</h2>
@@ -228,6 +241,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/botao_menu.js"></script>
     <script src="./js/carrossel.js"></script>
+    <script src="navbar.js"></script>
     
 </body>
 </html>

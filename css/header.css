@@ -3,7 +3,7 @@
     grid-template-columns: 20% 60% 20%;
     align-items: center;
     position: relative;
-    background-color: var(--cor-principal);
+    background-color: transparent;
 }
 
 .nav_site {
@@ -44,6 +44,11 @@
 .logo_nav {
     width: 30%;
 }
+@media screen and (min-width: 0px) and (max-width: 1020px) {
+    .logo_nav {
+        display: none;
+    }
+}
 
 
 @media screen and (min-width: 1024px) and (max-width: 1728px) {
@@ -59,7 +64,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 430px) {
+@media screen and (min-width: 0px) and (max-width: 720px) {
     .navegacao_link {
         display: none;
     }
@@ -88,6 +93,7 @@
         width: 85%;
         margin: 0.2em 0;
     }
+    
 }
 
 @media screen and (min-width: 430px) and (max-width: 500px){

@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
     font-family: var(--fonte-principal);
-    height: 60vh;
+    height: auto;
 }
 
 .historia_titulo {
@@ -14,6 +14,7 @@
     font-size: 34px;
     padding-bottom: 0.5em;
     cursor: default;
+
 }
 
 .historia_texto {
@@ -27,6 +28,7 @@
     align-items: center;
     justify-content: center;
     padding: 4em;
+    height: 50vh;
 }
 
 @media (min-width: 1024px) and (max-width: 1728px) {
@@ -51,10 +53,20 @@
 
     .historia {
         padding: 0;
-        height: 65em;
+        height: 90vh;
     }
 
     .historia_texto {
         font-size: 18px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 1020px) {
+    .container_historia {
+        height: 90vh;
+        padding: 2em;
+    }
+    .historia {
+        padding: 0;
+        height: 90vh;
     }
 }

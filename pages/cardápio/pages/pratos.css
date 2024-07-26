@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    background-color: #111111;
+    color: white;
+    font-family: 'Poppins';
+}
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec1 h6 {
+    font-size: 15px;
+    color: rgb(95, 30, 30);
+    margin-top: 20px;
+}
+.sec1 #titulo {
+    font-size: 30px;
+    margin-top: 20px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+.sec1 #titulo::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    width: 115%;
+}
+.cards {
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    gap: 200px;
+}
+.card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    gap: 60px;
+}
+.card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    text-align: right;
+    gap: 60px;
+}
+.textos p {
+   margin-top: 20px;
+   color: gray;
+}
+.card1 img {
+    width: 300px;
+}
+.card2 img {
+    width: 300px;
+}
+.botao_subir {
+    color: white;
+    padding: 10px;
+    position: fixed;
+    background-color: rgb(94, 34, 34);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 40px;
+    animation: botao 2s ease infinite;
+}
+.hidden {
+    opacity: 0;
+    transition: 1s;
+}
+.show {
+    opacity: 1;
+    transform: scale(1.04);
+}
+@keyframes botao {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 820px) {
+    .card1, .card2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        margin-bottom: 200px;
+    }
+}

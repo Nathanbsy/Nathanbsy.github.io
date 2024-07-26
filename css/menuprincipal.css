@@ -74,57 +74,58 @@
 }
 
 .menu_prato {
-    background: url(../assets/luxa.org-opacity-changed-menu3.avif);
+    background: url(../assets/Menu3.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #p1{
-    background: url(../assets/luxa.org-opacity-changed-menu1.jpg);
+    background: url(../assets/Menu1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #p2{
-    background: url(../assets/luxa.org-opacity-changed-menu2.jpg);
+    background: url(../assets/Menu2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #p3 {
-    background: url(../assets/luxa.org-opacity-changed-menu3.avif);
+    background: url(../assets/Menu3.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #p4{
-    background: url(../assets/luxa.org-opacity-changed-menu4.jpg);
+    background: url(../assets/Menu4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #p5{
-    background: url(../assets/luxa.org-opacity-changed-menu5.jpg);
+    background: url(../assets/Menu5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #p6{
-    background: url(../assets/luxa.org-opacity-changed-menu6.jpg);
+    background: url(../assets/Menu6.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #p7{
-    background: url(../assets/luxa.org-opacity-changed-menu7.jpg);
+    background: url(../assets/Menu7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #p8{
-    background: url(../assets/luxa.org-opacity-changed-menu8.jpg);
+    background: url(../assets/menu8.avif);
     background-position: center;
+    filter: brightness(0.6w);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -184,4 +185,11 @@ main #btnLeiaMais {
         margin-right: 0.5em;
     }
 }
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    #p1, #p5, #p4, #p8 {
+        visibility: hidden;
+    }
+}
+
+
 

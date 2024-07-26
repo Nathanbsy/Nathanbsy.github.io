@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-family: 'poppins';
+    overflow-x: hidden;
+    width: 100%;
+}
+.hidden {
+    opacity: 0;
+    transition: .8s all;
+    filter: blur(15px);
+}
+.show {
+    opacity: 1;
+    transform: scale(1.02);
+    filter: blur(0px);
+}
+/* NAVBAR */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    background-color: transparent;
+    
+}
+/* imagem nav */
+nav img {
+    width: 80px; 
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+.textosnav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+.textosnav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.textosnav a:hover {
+    color: rgb(190, 110, 110);
+}
+.textosnav a:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: rgb(116, 38, 38);
+    bottom: 0;
+    transition: .2s ease-in-out;
+}
+.textosnav a:hover::before {
+    width: 100%;
+
+}
+/* botao navbar, e hover */
+.botaonav button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 1px solid white;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    font-family: 'Poppins';
+    background-color: rgb(24, 24, 24);
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.botaonav button:hover {
+    color: black;
+}
+
+.botaonav button:after {
+    content: "";
+    width: 100%;
+    left: 0;
+    position: absolute;
+    height: 0%;
+    background-color: rgb(219, 90, 90);
+    z-index: -1;
+    top: 0;
+    border-radius: 0 0 70% 70%;
+    transition: .5s ease-in-out;
+
+}
+
+.botaonav button:hover::after {
+    height: 100px;
+}
+/* primeira section */
+.sec1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.box_textos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(15, 15, 15);
+    height: 100vh;
+    align-items: left;
+    justify-content: center;
+    margin-left: 100px;
+}
+.textos_sec1 {
+    width: 500px;
+    height: auto;
+}
+.textos_sec1 h1 {
+    font-size: 36px;
+}
+.textos_sec1 h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.textos_sec1 p {
+    margin-top: 30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* background primeira sec */
+.box_imagem {
+    background: url(./assents/bg-image-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.6);
+    box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.37);
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+}
+/* Segunda sec */
+
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-top: 100px;
+}
+.imagemsec2 img {
+    width: 500px;
+    transition: .2s;
+    margin-right: 50px;
+}
+.imagemsec2 img:hover {
+    width: 510px;
+}
+
+.texto1_sec2 {
+    width: 500px;
+    
+}
+.texto1_sec2 h1 {
+    margin-bottom: 50px;
+}
+.texto1_sec2 p {
+    color: gray;
+}
+.texto2_sec2 {
+    width: 500px;
+    
+}
+#div1, #div2, #div3 {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+#div1.mostrar {
+    max-height: 800px; /* Ajuste para a altura máxima do conteúdo */
+}
+#div2.mostrar {
+    max-height: 900px; /* Ajuste para a altura máxima do conteúdo */
+}
+#div3.mostrar {
+    max-height: 800px; /* Ajuste para a altura máxima do conteúdo */
+}
+.texto2_sec2 h1 {
+    margin-bottom: 50px;
+}
+.texto2_sec2 p {
+    margin-right: 50px;
+    color: gray;
+}
+.box1, .box3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.box2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.leia_mais {
+    display: none;
+    border: none;
+    padding: 20px 40px;
+    margin-top: 40px;
+    background-color: rgb(121, 46, 46);
+    color: white;
+    border-radius: 8px;
+    font-family: 'poppins';
+
+}
+.inicio {
+    font-size: 16px;
+    color: white;
+}
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 330px;
+}
+.cards {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulo_sec3 h1 {
+    margin-bottom: 100px;
+}
+.card {
+    height: 420px;
+    width: 290px;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+
+}
+.card:hover {
+    transform: scale(1.09);
+}
+.card img {
+    position: absolute;
+    top: -10px;
+    width: 180px;
+    border-radius: 50%;
+    transition: .4s;
+}
+.card:hover img {
+    width: 210px;
+    top: -90px;
+} 
+.card p {
+    padding: 40px;
+    font-size: 14px;
+}
+.card h4 {
+    margin-top: 190px;
+    padding: 20px;
+
+}
+#bot2 {
+    width: 160px;
+    top: 20px;
+}
+.card:hover #bot2 {
+    width: 200px;
+    top: -60px;
+}
+footer .social_ancora {
+
+    margin-left: 10px;
+    padding:4px 9px;
+    border-radius: 30px;
+    color: antiquewhite;
+    font-size: 1.5em;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(31, 31, 31);
+}
+footer {
+    margin-top: 320px;
+    height: 300px;
+    background-color: #1f0000;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .social_ancora:hover {
+    font-size: 1.6em;
+}
+
+.social_ancora1:hover {
+    background:linear-gradient(30deg, #8a3ab9, #bb4cd7, #fbad50);
+}
+.social_ancora2:hover {
+    background-color: rgb(70, 70, 187);
+}
+.social_ancora3:hover {
+    background-color: rgb(70, 187, 105);
+}
+/* todos as divs */
+.box_footer {
+    display: flex;
+    flex-direction: row;
+    margin: 4em 0 3em;
+    gap: 3em;
+}
+
+
+/* Tiutlos  */
+.titulo_footer {
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Poppins';
+    padding-bottom: 1em;
+    transition: 0.2s ease-in-out;
+    cursor: default;
+    
+}
+.titulo_footer:hover {
+    transform: scale(1.07);
+}
+
+.textos_footer {
+    font-size: 16px;
+    list-style: none;
+    font-family: 'Poppins';
+}
+footer li {
+    padding: 3.5px;
+}
+
+.redes_sociais {
+    text-align: center;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.box_link {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1728px) {
+    .titulo_footer {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 430px) {
+    .social_ancora {
+        padding: 0 1em 1em;
+    }
+
+    .box_footer {
+        margin-left: 1em;
+    }
+}
+
+.link_hamburguer {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-principal);
+    margin: 1em;
+    font-size: 20px;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.botao_hamburguer {
+    display: none;
+    align-items: center;
+    margin: 0;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+.menu_hamburguer {
+    position: fixed;
+    text-align: left;
+    top: 0;
+    left: -250px;
+    width: 190px;
+    height: 100%;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.menu_hamburguer, .visivel {
+    left: 0;
+}
+
+.invisivel {
+    left: -250px;
+}
+@media screen and (min-width: 0px) and (max-width: 950px) {
+    .linha {
+        width: 40px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: 10px auto;
+        transform-origin: center;
+        position: relative;
+        transition: .2s;
+    }
+    #botao_inv {
+        display: none;
+        visibility: none;
+    }
+    .textosnav ul {
+        margin-left: 60px;
+    }
+
+    button.ativar .linha:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    button.ativar .linha:nth-child(3) {
+        transform: translateY(-16px) rotate(-45deg);
+    }
+    button.ativar .linha:nth-child(2) {
+        width: 0;
+    }
+
+
+    .navegacao {
+        justify-content: left;
+    }
+
+    .botao_hamburguer {
+        display: block;
+        margin: 1em 2em;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .imagem_hamburguer {
+        width: 11.7vw;
+        height: 11.7vw;
+    }
+
+    .lista_menu {
+        padding: 1em 0;
+        margin: 0 0.5em;
+    }   
+}
+@media  screen and (min-width: 0px) and (max-width: 1025px) {
+    .box_imagem {
+        display: none;
+        width: 0px;
+    }
+    .box_textos {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        background: url(./assents/luxa.org-opacity-changed-backgroundsec1.jpg);
+        background-position: center;
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+}
+@media  screen and (min-width: 0px) and (max-width: 1120px) {
+    .box1, .box2, .box3 {
+        justify-content: center;
+    }
+    .sec3 {
+        height: 150vh;
+    }
+}
+@media  screen and (min-width: 0px) and (max-width: 624px) {
+    .textosnav {
+        display: none;
+    }
+}
+@media  screen and (min-width: 0px) and (max-width: 550px) {
+    .textos_sec1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+    }
+    .leia_mais {
+        display: flex;
+    }
+    .box1,.box2,.box3 {
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .imagemsec2 img {
+        width: 300px;
+        margin: 0px;
+    }
+    #div1, #div2, #div3 {
+        max-height: 0;
+    }
+}
+@media  screen and (min-width: 0px) and (max-width: 624px) {
+    .textosnav {
+        display: none;
+    }
+}
+
+.botao_subir {
+    display: flex;
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+    
+}
+.botao_subir a {
+    padding: 5px 12px;
+    background-color: rgb(192, 75, 75);
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    opacity: 1;
+}
+
+
+
+
