@@ -27,6 +27,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 50%;
+    margin-bottom: 1em;
 }
 #logosec1 {
     display: none;

@@ -3,7 +3,8 @@
     grid-template-columns: 20% 60% 20%;
     align-items: center;
     position: relative;
-    background-color: transparent;
+    background: transparent;
+    transition: all 0.2s;
 }
 
 .nav_site {
@@ -44,6 +45,14 @@
 .logo_nav {
     width: 30%;
 }
+
+.amostradinho{
+    display: block;
+}
+
+.escondidinho{
+    display: none;
+}
 @media screen and (min-width: 0px) and (max-width: 1020px) {
     .logo_nav {
         display: none;
@@ -64,7 +73,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 430px) {
     .navegacao_link {
         display: none;
     }

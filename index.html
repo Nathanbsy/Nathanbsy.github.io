@@ -19,9 +19,9 @@
     <!-- NAVBAR -->
     <nav id="nav" class="navegacao">
         <button onclick="menuVis()" id="botaaao" class="botao_hamburguer">
+            <span class="linha num1"></span>
             <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
+            <span class="linha num3"></span>
         </button>
         <div class="logo">
             <a href="#"><img class="logo_nav" src="./assets/icones/Loog.png" alt=""></a>
@@ -35,11 +35,11 @@
         </div>
         <aside id="menuHamburguer" class="menu_hamburguer invisivel">
             <ul class="lista_hamburguer">
-                <li class="lista_menu"><a class="link_hamburguer" href="#">Home</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="#section_reserva">Reserva</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="/pages/cardápio/index.html">Cardápio</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="./registro.html">Registro</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="#section_historia">História</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="#" onclick="menuVis()">Home</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="#section_reserva" onclick="menuVis()">Reserva</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="/pages/cardápio/index.html" onclick="menuVis()">Cardápio</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="./registro.html" onclick="menuVis()">Registro</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="#section_historia" onclick="menuVis()">História</a></li>
             </ul>
         </aside>
     </nav>
@@ -47,7 +47,7 @@
         <div class="textos">
 
                 <div><h4 style="color:gray">Restaurante</h4></div>
-                <h1 style="color: rgb(128, 36, 36);">La P<span style="color: white;">all</span><span style="color: green;">azo</span></h1>
+                <h1 style="color: green;">La P<span style="color: white;">all</span><span style="color: rgb(128, 36, 36);">azo</span></h1>
                 <p class="visivel">O melhor restaurante Italiano de São Paulo, recheado de surpresas e esplêndidos pratos servidos na hora.</p>
                 <p class="escondido">O melhor restaurante Italiano de São Paulo</p>
                 <img id="logosec1" src="./assets/logosec1.png" alt="">
