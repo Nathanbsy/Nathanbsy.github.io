@@ -1,83 +1,163 @@
 .sec1 {
     display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    margin-bottom: 200px;
     font-family: 'Poppins';
+    overflow-x: hidden;
+    width: 100%;
 }
-.textos {
+.logos_sec1 {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 100vh;
-    justify-content: center;
+    justify-content: end;
+    margin-bottom: 100px;
+    width: 20%;
+    font-size: 30px;
+    align-items: left;
     margin-left: 60px;
     gap: 20px;
-
 }
-.textos h1 {
-    font-size: 50px;
-    font-weight: 700;
+.textos_sec1 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 23%;
+    text-align: right;
+    gap: 40px;
+    margin-right: 20px;
 }
-.textos p {
+.textos_sec1 h4 {
     font-size: 20px;
-    width: 700px;
+    font-weight: 600;
+    position: relative;
+    color: rgb(65, 163, 65);
 }
-.imagem {
-    background: url(../assets/imagemsec1.png);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 50%;
-    margin-bottom: 1em;
-}
-#logosec1 {
-    display: none;
-}
-.escondido {
-    display: none;
+.textos_sec1 h4::before {
+    content: '';
+    height: 4px;
+    width: 10%;
+    right: 0;
+    position: absolute;
+    bottom: -20px;
+    background-color: rgb(2, 65, 2);
 }
 
-@media screen and (min-width: 0px) and (max-width: 1320px) {
-    .imagem {
+.centro_sec1 {
+    width: 50%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centro_sec1 h1 {
+    font-size: 200px;
+    font-weight: 800;
+    position: absolute;
+
+
+}
+.centro_sec1 img {
+    position: absolute;
+    animation: fade 4s ease infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.09);
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+@keyframes fade2 {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+@keyframes fade3 {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.06);
+
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+/* MODO CLARO */
+
+.sec1.dark {
+    background: white;
+    color: black;
+    margin-bottom: 0;
+}
+.sec1.dark i {
+    color: black;
+    
+    
+}
+.sec1.dark #letrasec1branca {
+    background: black;
+    -webkit-background-clip: text;
+    background-size: 400% 100%;
+    color: white;
+    -webkit-text-stroke: 6px transparent;
+}
+body.dark {
+    background-color: white;
+}
+@media screen and (min-width: 0px) and (max-width: 1480px) {
+    #peperonne1 {
         display: none;
         visibility: hidden;
     }
-    .textos {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        margin-left: 0;
-        padding: 20px;
-    }
-    .textos p {
-        width: 100%;
-        
-    }
-    #logosec1 {
-        visibility: visible;
-        display: block;
+    #alface1 {
+        visibility: hidden;
     }
 }
-@media screen and (min-width: 0px) and (max-width: 530px) {
-    .textos .visivel {
-        display: none;
+@media screen and (min-width: 0px) and (max-width: 1035px) {
+    .centro_sec1 {
+        transform: scale(0.8);
     }
+}
+@media screen and (min-width: 0px) and (max-width: 630px) {
+    .centro_sec1 {
+        transform: scale(0.5);
+    }
+    .textos_sec1 {
+        margin-bottom: 0;
+    }
+    .textos_sec1 {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 820px){
     .sec1 {
-        justify-content: center;
-    }
-    .textos {
-        width: 100%;
-        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        margin-left: 0;
-        padding: 20px;
-        width: 300px;
+        padding-top: 200px;
     }
-    .textos img {
-        width: 400px;
-    }
-    .escondido {
-        display: flex;
-        justify-content: center;
-        width: 300px;
+    .logos_sec1 {
+        display: none;
+        visibility: none;
+        
     }
 }

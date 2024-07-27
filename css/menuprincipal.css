@@ -190,6 +190,17 @@ main #btnLeiaMais {
         visibility: hidden;
     }
 }
+/* MODO ESCURO E CLARO */
 
+.menu.dark {
+    background-color: white;
+    color: black;
+}
+.menu.dark #btnLeiaMais {
+    background-color: black;
+    color: white;
+}
+.menu.dark #
+filter: brightness(0.6w);
 
 

@@ -19,9 +19,9 @@
     <!-- NAVBAR -->
     <nav id="nav" class="navegacao">
         <button onclick="menuVis()" id="botaaao" class="botao_hamburguer">
-            <span class="linha num1"></span>
             <span class="linha"></span>
-            <span class="linha num3"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
         </button>
         <div class="logo">
             <a href="#"><img class="logo_nav" src="./assets/icones/Loog.png" alt=""></a>
@@ -33,27 +33,39 @@
             <a class="navegacao_link" href="./registro.html">Registro</a>
             <a class="navegacao_link" href="#section_historia">História</a>
         </div>
+        <div>
+            <div id="trilho" class="trilho">
+                <div class="indicador"></div>
+            </div>
+        </div>
         <aside id="menuHamburguer" class="menu_hamburguer invisivel">
             <ul class="lista_hamburguer">
-                <li class="lista_menu"><a class="link_hamburguer" href="#" onclick="menuVis()">Home</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="#section_reserva" onclick="menuVis()">Reserva</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="/pages/cardápio/index.html" onclick="menuVis()">Cardápio</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="./registro.html" onclick="menuVis()">Registro</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="#section_historia" onclick="menuVis()">História</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="#">Home</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="#section_reserva">Reserva</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="/pages/cardápio/index.html">Cardápio</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="./registro.html">Registro</a></li>
+                <li class="lista_menu"><a class="link_hamburguer" href="#section_historia">História</a></li>
             </ul>
         </aside>
     </nav>
-    <section class="sec1">
-        <div class="textos">
-
-                <div><h4 style="color:gray">Restaurante</h4></div>
-                <h1 style="color: green;">La P<span style="color: white;">all</span><span style="color: rgb(128, 36, 36);">azo</span></h1>
-                <p class="visivel">O melhor restaurante Italiano de São Paulo, recheado de surpresas e esplêndidos pratos servidos na hora.</p>
-                <p class="escondido">O melhor restaurante Italiano de São Paulo</p>
-                <img id="logosec1" src="./assets/logosec1.png" alt="">
+    <section id="sec1" class="sec1 ">
+        <div class="logos_sec1 hidden">
+            <img id="alface1" src="./assets/Alface.png" style="animation: fade3 6s ease infinite; width: 400px;top: 300px; left: -120px; position: absolute;"  alt="">
+            <a style="color: white;" href=""><i class="bi bi-instagram"></i></a>
+            <a style="color: white;" href=""><i class="bi bi-whatsapp"></i></a>
+            
         </div>
-        <div class="imagem">
-
+        <div class="centro_sec1 hidden">
+            
+            <h1> <span style="color: rgb(62, 184, 62);">La P</span><span id="letrasec1branca" >all</span><span style="color: rgb(177, 51, 51);">azo</span></h1>
+            <img src="./assets/Macarrao-Sec1.png" alt="">
+        </div>
+        <div class="textos_sec1 hidden">
+            <img id="peperonne1" style="animation: fade2 6s ease infinite;width: 400px; display: flex; position: absolute; top: 80px; right: 20px; " src="./assets/Peperonne.png" alt="">
+            <h4>O CLÁSSICO</h4>
+            <p>O melhor restaurante de São Paulo, feito especialmente para você e sua família, lugar aconchegando e rechado de surpresas</p>
+            <div style="display: flex;
+            justify-content: end; gap: 10px;"><p style="color: rgb(177, 51, 51);">compartilhar</p> <i style="color: rgb(177, 51, 51);" class="bi bi-share-fill"></i></div>
         </div>
     </section>
     <!-- PARTE PRINCIPAL DO SITE -->
@@ -62,11 +74,11 @@
         <!-- SEÇÃO EXPLICANDO A HISTORIA DO RESTAURANTE -->
         <section  id="section_menu" class="menu">
             
-            <h2 class="menu_titulo">Menu</h2>
-            <p class="menu_texto">Pratos cuidadosamente elaborados por quem tem paixão em servir o melhor.
+            <h2 class="menu_titulo hidden">Menu</h2>
+            <p class="menu_texto hidden">Pratos cuidadosamente elaborados por quem tem paixão em servir o melhor.
                 Qualidade nos ingredientes, para resultados incríveis.</p>
-        <div class="tudo_conteiner_menu">
-        <div class="container">
+        <div class="tudo_conteiner_menu hidden">
+        <div class="container ">
             <div class="flip">
                 <div id="p1" class="menu_prato"></div>
 
@@ -135,8 +147,8 @@
 
         
         <!-- História -->
-        <section id="section_historia" class="historia">
-            <div class="container_historia">
+        <section id="section_historia" class="historia ">
+            <div class="container_historia hidden">
                 <h2 class="historia_titulo">História</h2>
                 <p class="historia_texto">Em 2020, Giovanni, um imigrante italiano apaixonado pela culinária de sua terra natal, inaugurou o La Pallazo em São Paulo, trazendo consigo receitas familiares e tradições culinárias de gerações. Nos primeiros anos, o restaurante enfrentou desafios, mas conquistou os paladares dos paulistanos com suas massas frescas e molhos aromáticos.
                     Com o passar do tempo, o La Pallazo se tornou um ponto de encontro para a comunidade italiana na cidade, celebrando festas e eventos tradicionais. Em meio à expansão do negócio, Giovanni trouxe sua família da Itália para ajudar na gestão, mantendo viva a autenticidade do local.
@@ -147,7 +159,7 @@
         <!-- SEÇÃO PARA A RESERVA -->
         <section id="section_reserva" class="reserva">
             <!-- FORMULARIO DA RESERVA -->
-            <form class="reserva_from" method="post" action="mailto:nathan.silva163@etec.sp.gov.br" enctype="text/plain">
+            <form class="reserva_from hidden" method="post" action="mailto:nathan.silva163@etec.sp.gov.br" enctype="text/plain">
                 <div class="h2_reserva">
                 <h2>Faça sua <span class="h2_diferente_reserva">reserva</span></h2>
                 </div>
@@ -191,7 +203,7 @@
     
 <!-- FOOTER DO SITE -->
     <footer>
-        <section class="local">
+        <section id="local" class="local">
             
             <div id="localizacao" class="local_container">
                 <h3 class="local_titulo">LOCALIZAÇÃO</h3>
@@ -241,7 +253,8 @@
     <script src="./js/script.js"></script>
     <script src="./js/botao_menu.js"></script>
     <script src="./js/carrossel.js"></script>
-    <script src="navbar.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/aparecer.js"></script>
     
 </body>
 </html>

@@ -3,8 +3,34 @@
     grid-template-columns: 20% 60% 20%;
     align-items: center;
     position: relative;
-    background: transparent;
-    transition: all 0.2s;
+    background-color: transparent;
+    z-index: 100;
+    transition: .5s;
+}
+.trilho {
+    background-color: gray;
+    height: 40px;
+    width: 70px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.trilho .indicador {
+    background: url(../assets/icones/moon-cloud-star-icon-with-black-background-moonlight-flat-icon-vector-illustration_739746-57.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 40px;
+    transform: scale(0.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
 }
 
 .nav_site {
@@ -44,14 +70,7 @@
 
 .logo_nav {
     width: 30%;
-}
-
-.amostradinho{
-    display: block;
-}
-
-.escondidinho{
-    display: none;
+    margin-left: 20px;
 }
 @media screen and (min-width: 0px) and (max-width: 1020px) {
     .logo_nav {
@@ -73,7 +92,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 430px) {
+@media screen and (min-width: 0px) and (max-width: 720px) {
     .navegacao_link {
         display: none;
     }
@@ -112,5 +131,30 @@
     .navegacao {
     margin-left: 2em;
     }
+
+}
+/* MODO ESCURO */
+.trilho.dark {
+    background-color: rgb(221, 213, 139);
+}
+.trilho.dark .indicador {
+    left: 30px;
+    background-color: rgb(112, 112, 112);
+    background: url(../assets/icones/if-weather-2-2682849_90781.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(102, 89, 61);
+    
+}
+#nav.dark {
+    background-color: white;
+    color: black;
+}
+#nav.dark a {
+    color: black;
+}
+#nav.dark .navegacao_link::after {
+    background-color: black;
 
 }

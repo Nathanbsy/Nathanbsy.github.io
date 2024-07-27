@@ -1,5 +1,4 @@
 
-
 .reserva {
     display: flex;
     align-items: center;
@@ -117,4 +116,38 @@ form input, i {
     .reserva {
         padding: 5em;
     }
+}
+
+/* MODO CLARO */ 
+
+.reserva.dark {
+    background-color: white;
+    margin-bottom: 0;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.reserva.dark form {
+    background: linear-gradient(300deg, rgba(0, 0, 0, 0.9),rgba(10, 10, 10, 0.9));
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+}
+.reserva.dark form span {
+    color: red;
+}
+.reserva.dark .botao_reserva button {
+    color: black;
+    background-color: rgb(182, 182, 182);
+}
+.reserva.dark .h2_reserva::before {
+    background-color: white;
+}
+.reserva.dark .input_img_reserva {
+    border-bottom: 1px solid white;
 }
