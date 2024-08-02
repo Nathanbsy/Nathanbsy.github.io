@@ -16,12 +16,15 @@
 </head>
 
 <body>
+    <a id="btnstop" class="volta" href="#"><img src="./assets/icones/seta-pra-cima-branca.png" alt=""></a>
     <!-- NAVBAR -->
     <nav id="nav" class="navegacao">
         <button onclick="menuVis()" id="botaaao" class="botao_hamburguer">
-            <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
+            <div id="tachovendohamburguer3">
+                <span id="linhas" class="linha"></span>
+                <span id="linhas" class="linha"></span>
+                <span id="linhas" class="linha"></span>
+            </div>
         </button>
         <div class="logo">
             <a href="#"><img class="logo_nav" src="./assets/icones/Loog.png" alt=""></a>
@@ -39,12 +42,12 @@
             </div>
         </div>
         <aside id="menuHamburguer" class="menu_hamburguer invisivel">
-            <ul class="lista_hamburguer">
-                <li class="lista_menu"><a class="link_hamburguer" href="#">Home</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="#section_reserva">Reserva</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="/pages/cardápio/index.html">Cardápio</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="./registro.html">Registro</a></li>
-                <li class="lista_menu"><a class="link_hamburguer" href="#section_historia">História</a></li>
+            <ul id="listaH" class="lista_hamburguer">
+                <li class="lista_menu"><a id="textoh" class="link_hamburguer" href="#">Home</a></li>
+                <li class="lista_menu"><a id="textoh" class="link_hamburguer" href="#section_reserva">Reserva</a></li>
+                <li class="lista_menu"><a id="textoh" class="link_hamburguer" href="/pages/cardápio/index.html">Cardápio</a></li>
+                <li class="lista_menu"><a id="textoh" class="link_hamburguer" href="./registro.html">Registro</a></li>
+                <li class="lista_menu"><a id="textoh" class="link_hamburguer" href="#section_historia">História</a></li>
             </ul>
         </aside>
     </nav>
@@ -52,7 +55,7 @@
         <div class="logos_sec1 hidden">
             <img id="alface1" src="./assets/Alface.png" style="animation: fade3 6s ease infinite; width: 400px;top: 300px; left: -120px; position: absolute;"  alt="">
             <a style="color: white;" href=""><i class="bi bi-instagram"></i></a>
-            <a style="color: white;" href=""><i class="bi bi-whatsapp"></i></a>
+            <a style="color: white;" href="https://wa.me/5555119515655?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank"><i class="bi bi-whatsapp"></i></a>
             
         </div>
         <div class="centro_sec1 hidden">
@@ -238,7 +241,7 @@
                 <h3 class="titulo_footer">Redes Sociais</h3>
                 <a class="social_ancora" href="https://www.instagram.com" target="_blank"><i id="social_insta" class="bi bi-instagram"></i></a>
                 <a class="social_ancora" href="https://www.facebook.com" target="_blank"><i id="social_face" class="bi bi-facebook"></i></a>
-                <a class="social_ancora" href="https://web.whatsapp.com" target="_blank"><i id="social_what" class="bi bi-whatsapp"></i></a>
+                <a class="social_ancora" href="https://wa.me/5555119515655?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank"><i id="social_what" class="bi bi-whatsapp"></i></a>
             </div>
 
             
@@ -249,12 +252,10 @@
     
     </footer>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/botao_menu.js"></script>
-    <script src="./js/carrossel.js"></script>
-    <script src="./js/navbar.js"></script>
     <script src="./js/aparecer.js"></script>
+    <script src="./js/navbar.js"></script>
     
 </body>
 </html>

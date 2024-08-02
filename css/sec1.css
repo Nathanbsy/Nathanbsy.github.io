@@ -109,8 +109,6 @@
 }
 .sec1.dark i {
     color: black;
-    
-    
 }
 .sec1.dark #letrasec1branca {
     background: black;
@@ -120,7 +118,7 @@
     -webkit-text-stroke: 6px transparent;
 }
 body.dark {
-    background-color: white;
+    background: white;
 }
 @media screen and (min-width: 0px) and (max-width: 1480px) {
     #peperonne1 {

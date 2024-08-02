@@ -12,21 +12,27 @@ function verMais(){
     }
 }
 
-let trilho = document.getElementById('trilho')
-let nav = document.getElementById('nav')
-let sec1 = document.getElementById('sec1')
-let body = document.querySelector('body')
-let menu = document.getElementById('section_menu')
-let reserva = document.getElementById('section_reserva')
-let local = document.getElementById('local')
+let trilho = document.getElementById("trilho");
+let nav = document.getElementById("nav");
+let sec1 = document.getElementById("sec1");
+let body = document.querySelector("body");
+let menu = document.getElementById("section_menu");
+let reserva = document.getElementById('section_reserva');
+let local = document.getElementById('local');
+let linhas = document.getElementById("tachovendohamburguer3");
+let fundoH = document.getElementById("menuHamburguer");
+let listaH = document.getElementById("listaH");
 
-trilho.addEventListener('click', ()=> {
-    trilho.classList.toggle('dark')
-    nav.classList.toggle('dark')
-    sec1.classList.toggle('dark')
-    body.classList.toggle('dark')
-    menu.classList.toggle('dark')
-    local.classList.toggle('dark')
-    reserva.classList.toggle('dark')
 
+trilho.addEventListener("click", () => {
+    trilho.classList.toggle("dark");
+    nav.classList.toggle("dark");
+    sec1.classList.toggle("dark");
+    body.classList.toggle("dark");
+    menu.classList.toggle("dark");
+    local.classList.toggle("dark");
+    reserva.classList.toggle("dark");
+    linhas.classList.toggle("preto");
+    fundoH.classList.toggle("muda");
+    listaH.classList.toggle("muda2")
 })

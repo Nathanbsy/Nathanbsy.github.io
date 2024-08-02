@@ -29,6 +29,30 @@
     transition: 2s;
 }
 
+.preto .linha{
+    background-color: black;
+}
+
+.branco .linha{
+    background-color: white;
+}
+
+.branquim .navegacao {
+    background-color: white;
+}
+
+.muda {
+    background-color: white;
+    box-shadow: #0f0f0f 2px 2px 3px;
+}
+
+.muda2 li a{
+    color: black;
+    border-top: black solid 1px;
+}
+
+
+
 body {
     background-color: var(--cor-principal);
     color: var(--cor-tercearia);
@@ -68,4 +92,18 @@ body::-webkit-scrollbar-thumb {
     body{
         overflow-y: hidden;
     }
+}
+
+.volta {
+    position: fixed;
+    right: 1.5em;
+    bottom: 1.5em;
+    background-color: rgb(94, 34, 34);
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    z-index: 100;
 }

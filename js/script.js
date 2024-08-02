@@ -13,6 +13,3 @@ function menuVis() {
         menuMobile.classList.add("invisivel");
     }
 }
-
-
-

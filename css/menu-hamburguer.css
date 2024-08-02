@@ -7,6 +7,7 @@
     font-size: 20px;
     border-top: 1px solid whitesmoke;
 }
+
 .botao_hamburguer {
     display: none;
     align-items: center;
@@ -19,12 +20,22 @@
 .menu_hamburguer {
     position: fixed;
     text-align: left;
-    top: 8%;
+    top: 0%;
     left: -250px;
     width: 170px;
     height: 100%;
     background-color: var(--cor-principal);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+    display: flex;
+    justify-content: center;
+}
+
+.lista_hamburguer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    margin-top: 4.75em;
+    
 }
 
 .menu_hamburguer, .visivel {
@@ -34,11 +45,6 @@
 .invisivel {
     left: -250px;
 }
-
-
-
-
-
 @media screen and (min-width: 0px) and (max-width: 720px) {
     .linha {
         width: 40px;
@@ -63,12 +69,14 @@
 
 
     .navegacao {
-        justify-content: left;
+        display: flex;
+        justify-content: center;
+        gap: 28%;
     }
 
     .botao_hamburguer {
         display: block;
-        margin: 1em 2em;
+        background-color: transparent;
     }
 
     .imagem_hamburguer {

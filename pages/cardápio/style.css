@@ -8,6 +8,7 @@
 }
 
 
+
 body {
     background-color: rgb(10, 10, 10);
     color: white;
@@ -475,7 +476,10 @@ footer li {
     .lista_menu {
         padding: 1em 0;
         margin: 0 0.5em;
-    }   
+    } 
+    .body {
+        overflow-y: hidden;
+    }  
 }
 @media  screen and (min-width: 0px) and (max-width: 1025px) {
     .box_imagem {
@@ -494,6 +498,9 @@ footer li {
         background-size: cover;
         
     }
+    .body {
+        overflow-y: hidden;
+    }
     
 }
 @media  screen and (min-width: 0px) and (max-width: 1120px) {
@@ -503,10 +510,16 @@ footer li {
     .sec3 {
         height: 150vh;
     }
+    .body {
+        overflow-y: hidden;
+    }
 }
 @media  screen and (min-width: 0px) and (max-width: 624px) {
     .textosnav {
         display: none;
+    }
+    .body {
+        overflow-y: hidden;
     }
 }
 @media  screen and (min-width: 0px) and (max-width: 550px) {
@@ -532,10 +545,24 @@ footer li {
     #div1, #div2, #div3 {
         max-height: 0;
     }
+    .body {
+        overflow-y: hidden;
+    }
 }
 @media  screen and (min-width: 0px) and (max-width: 624px) {
     .textosnav {
         display: none;
+    }
+    .body {
+        overflow-y: hidden;
+    }
+}
+@media  screen and (min-width: 0px) and (max-width: 4340x) {
+    .textosnav {
+        display: none;
+    }
+    .body {
+        overflow-y: hidden;
     }
 }
 
@@ -554,7 +581,3 @@ footer li {
     font-size: 30px;
     opacity: 1;
 }
-
-
-
-

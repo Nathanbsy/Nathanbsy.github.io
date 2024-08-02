@@ -3,9 +3,7 @@
     grid-template-columns: 20% 60% 20%;
     align-items: center;
     position: relative;
-    background-color: transparent;
     z-index: 100;
-    transition: .5s;
 }
 .trilho {
     background-color: gray;
@@ -72,6 +70,8 @@
     width: 30%;
     margin-left: 20px;
 }
+
+
 @media screen and (min-width: 0px) and (max-width: 1020px) {
     .logo_nav {
         display: none;
@@ -124,12 +124,12 @@
     
 }
 
-@media screen and (min-width: 430px) and (max-width: 500px){
+@media screen and (min-width: 0px) and (max-width: 500px){
     .logo {
-     display: none;
+        display: none;
     }
     .navegacao {
-    margin-left: 2em;
+        margin-top: 1em;
     }
 
 }
@@ -147,13 +147,15 @@
     background-color: rgb(102, 89, 61);
     
 }
+#nav.dark .navegacao_link {
+    color: black;
+}
+
 #nav.dark {
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
-#nav.dark a {
-    color: black;
-}
+
 #nav.dark .navegacao_link::after {
     background-color: black;
 
