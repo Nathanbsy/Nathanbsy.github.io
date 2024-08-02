@@ -101,7 +101,9 @@
     }
 }
 /* MODO CLARO */
-
+.dark {
+    color: black;
+}
 .sec1.dark {
     background: white;
     color: black;

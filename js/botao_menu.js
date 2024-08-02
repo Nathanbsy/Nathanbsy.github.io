@@ -22,9 +22,10 @@ let local = document.getElementById('local');
 let linhas = document.getElementById("tachovendohamburguer3");
 let fundoH = document.getElementById("menuHamburguer");
 let listaH = document.getElementById("listaH");
-
+let listaFooter = document.querySelectorAll("#listaFooter");
 
 trilho.addEventListener("click", () => {
+    let i = 0;
     trilho.classList.toggle("dark");
     nav.classList.toggle("dark");
     sec1.classList.toggle("dark");
@@ -34,5 +35,11 @@ trilho.addEventListener("click", () => {
     reserva.classList.toggle("dark");
     linhas.classList.toggle("preto");
     fundoH.classList.toggle("muda");
-    listaH.classList.toggle("muda2")
+    listaH.classList.toggle("muda2");
+    
+    while (i < 2) {
+        listaFooter[i].classList.toggle("numero");
+        i = i + 1;
+    }
+    
 })

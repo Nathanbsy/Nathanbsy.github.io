@@ -51,7 +51,9 @@
     border-top: black solid 1px;
 }
 
-
+.numero li a {
+    color: black;
+}
 
 body {
     background-color: var(--cor-principal);
