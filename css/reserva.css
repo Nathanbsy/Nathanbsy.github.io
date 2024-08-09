@@ -126,9 +126,16 @@ form input, i {
     form {
         width: 80%;
     }
+
+    .divs_reserva input {
+        width: 50%;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 1024px){
     form {
+        width: 60%;
+    }
+    .divs_reserva input{
         width: 60%;
     }
 }
