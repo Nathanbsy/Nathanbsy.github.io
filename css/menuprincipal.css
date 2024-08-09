@@ -187,7 +187,7 @@ main #btnLeiaMais {
 }
 @media screen and (min-width: 0px) and (max-width: 800px) {
     #p1, #p5, #p4, #p8 {
-        visibility: hidden;
+        display: none;
     }
 }
 /* MODO ESCURO E CLARO */

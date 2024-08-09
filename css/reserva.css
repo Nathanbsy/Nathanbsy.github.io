@@ -113,10 +113,28 @@ form input, i {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1728px) {
+    form {
+        width: 30%;
+    }
+
     .reserva {
         padding: 5em;
     }
 }
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+    form {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1024px){
+    form {
+        width: 60%;
+    }
+}
+
+
+
 
 /* MODO CLARO */ 
 
@@ -150,4 +168,8 @@ form input, i {
 }
 .reserva.dark .input_img_reserva {
     border-bottom: 1px solid white;
+}
+
+.reserva.dark .input {
+    color: white;
 }

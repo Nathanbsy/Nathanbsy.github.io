@@ -72,10 +72,23 @@
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 1020px) {
+@media screen and (min-width: 720px) and (max-width: 1020px) {
     .logo_nav {
         display: none;
     }
+    .navegacao {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+    }
+    .navegacao_link {
+        padding: 1em 0.5em;
+        font-size: 20px;
+    }
+
+    .trilho {
+        display: none;
+    }
+
 }
 
 
@@ -89,6 +102,10 @@
     .logo_nav {
         width: 35%;
         margin: 1em;
+    }
+
+    .trilho {
+        margin-left: 5em;
     }
 }
 
@@ -107,14 +124,11 @@
         position: fixed;
         width: 100%;
         z-index: 100;
-        display: flex;
+        margin-top: 1em;
     }
 
     .logo {
-        width: 5em;
-        height: 5em;
-        justify-content: right;
-        margin-left: auto;
+        display: none;
     }
 
     .logo_nav {

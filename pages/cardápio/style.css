@@ -406,7 +406,7 @@ footer li {
     align-items: center;
     margin: 0;
     z-index: 100;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     border: none;
 }
 
@@ -419,6 +419,13 @@ footer li {
     height: 100%;
     background-color: black;
     transition: all 0.3s ease;
+}
+
+.lista_hamburguer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    margin-top: 4em;
 }
 
 .menu_hamburguer, .visivel {
@@ -465,7 +472,6 @@ footer li {
     .botao_hamburguer {
         display: block;
         margin: 1em 2em;
-        background-color: rgb(0, 0, 0);
     }
 
     .imagem_hamburguer {
