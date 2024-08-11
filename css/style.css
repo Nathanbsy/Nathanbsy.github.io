@@ -56,7 +56,7 @@
 }
 
 body {
-    background-color: var(--cor-principal);
+    background-color: black;
     color: var(--cor-tercearia);
     font-family: var(--fonte-principal);
     scroll-behavior: smooth;

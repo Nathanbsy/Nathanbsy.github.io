@@ -114,7 +114,7 @@ form input, i {
 
 @media screen and (min-width: 1024px) and (max-width: 1728px) {
     form {
-        width: 30%;
+        width: 40%;
     }
 
     .reserva {
@@ -131,7 +131,7 @@ form input, i {
         width: 50%;
     }
 }
-@media screen and (min-width: 500px) and (max-width: 1024px){
+@media screen and (min-width: 500px) and (max-width: 1023px){
     form {
         width: 60%;
     }
