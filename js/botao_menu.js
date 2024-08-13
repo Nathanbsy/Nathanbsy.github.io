@@ -42,5 +42,4 @@ trilho.addEventListener("click", () => {
     fundoH.classList.toggle("muda");
     listaH.classList.toggle("muda2");
     textoFormulario.classList.toggle("dark");
-    
 })
