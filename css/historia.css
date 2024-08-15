@@ -14,7 +14,6 @@
     font-size: 34px;
     padding-bottom: 0.5em;
     cursor: default;
-
 }
 
 .historia_texto {
@@ -53,14 +52,18 @@
 
     .historia {
         padding: 0;
-        height: 90vh;
+        height: 80vh;
     }
 
     .historia_texto {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    .container_historia {
+        height: 65vh;
     }
 }
-@media screen and (min-width: 0px) and (max-width: 1020px) {
+@media screen and (min-width: 500px) and (max-width: 1020px) {
     .container_historia {
         height: 90vh;
         padding: 2em;
