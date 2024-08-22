@@ -5,18 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/sec1.css">
-    <link rel="shortcut icon" type="imagex/png" href="./assets/icones/Loog.png">
-
+    <link rel="stylesheet" href="./src/css/sec1.css">
+    <link rel="shortcut icon" type="imagex/png" href="./src/assets/icones/imagem-logo-secundaria.png">
     <title>La Pallazo</title>
 </head>
 
-<body>
-    <a id="btnstop" class="volta" href="#"><img src="./assets/icones/seta-pra-cima-branca.png" alt=""></a>
+<body id="vamover">
+    <a id="btnstop" class="volta" href="#"><img src="./src/assets/icones/imagem-voltar-home.png" alt=""></a>
     <!-- NAVBAR -->
     <nav id="nav" class="navegacao">
         <button onclick="menuVis()" id="botaaao" class="botao_hamburguer">
@@ -27,7 +26,7 @@
             </div>
         </button>
         <div class="logo">
-            <a href="#"><img class="logo_nav" src="./assets/icones/Loog.png" alt=""></a>
+            <a href="#"><img class="logo_nav" src="./src/assets/icones/imagem-logo-secundaria.png" alt=""></a>
         </div>
         <div class="nav_site">
             <a class="navegacao_link" href="#">Home</a>
@@ -45,34 +44,33 @@
             <ul id="listaH" class="lista_hamburguer">
                 <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="#">Home</a></li>
                 <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="#section_reserva">Reserva</a></li>
-                <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="/pages/cardápio/index.html">Cardápio</a></li>
+                <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="./src/pages/cardápio/index.html">Cardápio</a></li>
                 <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="./registro.html">Registro</a></li>
                 <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="#section_historia">História</a></li>
             </ul>
         </aside>
     </nav>
-    <section id="sec1" class="sec1 ">
+    <!-- PARTE PRINCIPAL DO SITE -->
+    <main id="sec1" class="sec1 ">
         <div class="logos_sec1 hidden">
-            <img id="alface1" src="./assets/Alface.png" style="animation: fade3 6s ease infinite; width: 400px;top: 300px; left: -120px; position: absolute;"  alt="">
+            <img id="alface1" src="./src/assets/imagem-alface.png" style="animation: fade3 6s ease infinite; width: 400px;top: 300px; left: -120px; position: absolute;"  alt="">
             <a style="color: white;" href=""><i class="bi bi-instagram"></i></a>
             <a style="color: white;" href="https://wa.me/5555119515655?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank"><i class="bi bi-whatsapp"></i></a>
             
         </div>
         <div class="centro_sec1 hidden">
             
-            <h1> <span style="color: rgb(62, 184, 62);">La P</span><span id="letrasec1branca" >all</span><span style="color: rgb(177, 51, 51);">azo</span></h1>
-            <img src="./assets/Macarrao-Sec1.png" alt="">
+            <h1> <span style="color: rgb(62, 184, 62);">La P</span><span class="mano" id="letrasec1branca" >all</span><span style="color: rgb(177, 51, 51);">azo</span></h1>
+            <img src="./src/assets/imagem-macarrao-intro.png" alt="">
         </div>
         <div class="textos_sec1 hidden">
-            <img id="peperonne1" style="animation: fade2 6s ease infinite;width: 400px; display: flex; position: absolute; top: 80px; right: 20px; " src="./assets/Peperonne.png" alt="">
+            <img id="peperonne1" style="animation: fade2 6s ease infinite;width: 400px; display: flex; position: absolute; top: 80px; right: 20px; " src="./src/assets/imagem-pepperone-intro.png" alt="">
             <h4>O CLÁSSICO</h4>
             <p>O melhor restaurante de São Paulo, feito especialmente para você e sua família, lugar aconchegando e rechado de surpresas</p>
             <div style="display: flex;
             justify-content: end; gap: 10px;"><p style="color: rgb(177, 51, 51);">compartilhar</p> <i style="color: rgb(177, 51, 51);" class="bi bi-share-fill"></i></div>
         </div>
-    </section>
-    <!-- PARTE PRINCIPAL DO SITE -->
-    <main>
+    </main>
         <!-- SEÇÃO EXPLICANDO A HISTORIA DO RESTAURANTE -->
         <section  id="section_menu" class="menu">
             
@@ -84,7 +82,7 @@
                 <div class="flip">
                     <div id="p1" class="menu_prato"></div>
 
-                    <div id="p1" class="menu_prato_tras"> exemplo</div>
+                    <div id="inv" class="menu_prato_tras"> exemplo</div>
                 </div>
             </div>
                 <div class="container">
@@ -105,7 +103,7 @@
                     <div  class="flip">
                         <div id="p4" class="menu_prato"></div>
                 
-                        <div id="p4" class="menu_prato_tras"> exemplo</div>
+                        <div id="inv" class="menu_prato_tras"> exemplo</div>
                     </div>
                 </div>
             </div>
@@ -115,7 +113,7 @@
                     <div class="flip">
                         <div id="p5" class="menu_prato"></div>
 
-                        <div id="p5" class="menu_prato_tras"> exemplo</div>
+                        <div id="inv" class="menu_prato_tras"> exemplo</div>
                     </div>
                 </div>
                 <div class="container">
@@ -136,7 +134,7 @@
                     <div class="flip">
                         <div id="p8" class="menu_prato"></div>
                     
-                        <div id="p8" class="menu_prato_tras"> exemplo</div>
+                        <div id="inv" class="menu_prato_tras"> exemplo</div>
                     </div>
                 </div>
             </div>
@@ -150,8 +148,7 @@
             <div class="container_historia hidden">
                 <h2 class="historia_titulo">História</h2>
                 <p class="historia_texto">Em 2020, Giovanni, um imigrante italiano apaixonado pela culinária de sua terra natal, inaugurou o La Pallazo em São Paulo, trazendo consigo receitas familiares e tradições culinárias de gerações. Nos primeiros anos, o restaurante enfrentou desafios, mas conquistou os paladares dos paulistanos com suas massas frescas e molhos aromáticos.
-                    Com o passar do tempo, o La Pallazo se tornou um ponto de encontro para a comunidade italiana na cidade, celebrando festas e eventos tradicionais. Em meio à expansão do negócio, Giovanni trouxe sua família da Itália para ajudar na gestão, mantendo viva a autenticidade do local.
-                    Nos dias de hoje, o restaurante é um marco da gastronomia italiana em São Paulo, conhecido não apenas por sua comida deliciosa, mas também por sua atmosfera acolhedora e familiar. A equipe é uma mistura de brasileiros e italianos, unidos pela paixão pela culinária. O La Pallazo continua a ser um símbolo da imigração italiana no Brasil, preservando tradições e sabores que atravessam gerações.</p>
+                    Com o passar do tempo, o La Pallazo se tornou um ponto de encontro para a comunidade italiana na cidade, celebrando festas e eventos tradicionais. Em meio à expansão do negócio, Giovanni trouxe sua família da Itália para ajudar na gestão, mantendo viva a autenticidade do local.</p>
             </div>
         </section>
         <!-- SEÇÃO PARA A RESERVA -->
@@ -195,8 +192,6 @@
             </form>
 
         </section>
-        
-    </main>
 <!-- FOOTER DO SITE -->
     <footer>
         <section id="local" class="local">
@@ -208,14 +203,13 @@
         </section>
         <div class="box_footer">
             <!-- Box redes sociais -->
-            <div class="Ajuda">
+            <div class="ajuda">
 
                 <h3 class="titulo_footer">Contato</h3>
                 <ul id="listaFooter" class="textos_footer">
-                    <li class="link_footer"><a class="box_link" href="#">Ajuda</a></li>
-                    <li class="link_footer"><a class="box_link" href="#">Serviços</a></li>
-                    <li class="link_footer"><a class="box_link" href="#">Afilie-se</a></li>
-                    <li class="link_footer"><a class="box_link" href="#">Política de Privacidade</a></li>
+                    <li class="link_footer"><a class="box_link" href="https://wa.me/5511951565591?text=Gostaria%20de%20ajuda%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank">Ajuda</a></li>
+                    <li class="link_footer"><a class="box_link" href="https://wa.me/5511951565591?text=Gostaria%20de%20me%20afiliar%20ao%20restaurante%20La%20Pallazo" target="_blank">Afilie-se</a></li>
+                    <li class="link_footer"><a class="box_link" href="https://www.abf.com.br/politica-de-privacidade/?gad_source=1&gclid=CjwKCAjwoJa2BhBPEiwA0l0ImIDXzbnomRih7tdGbmI4HshyA7kp8OWFLokXQKOH7axB3871Vf8CQBoCs7YQAvD_BwE" target="_blank">Política de Privacidade</a></li>
                 </ul>
                 
             </div>
@@ -223,10 +217,9 @@
             <div class="loja_online">
                 <h3 class="titulo_footer">Loja</h3>
                 <ul id="listaFooter" class="textos_footer">
-                    <li class="link_footer"><a class="box_link" href="#">Procurar</a></li>
-                    <li class="link_footer"><a class="box_link" href="#">Reserva</a></li>
-                    <li class="link_footer"><a class="box_link" href="#localizacao">Local</a></li>
-                    <li class="link_footer"><a class="box_link" href="#">Regras</a></li>
+                    <li class="link_footer"><a class="box_link" href="#section_reserva" target="_blank">Reserva</a></li>
+                    <li class="link_footer"><a class="box_link" href="#localizacao" target="_blank">Local</a></li>
+                    <li class="link_footer"><a class="box_link" href="https://servircomrequinte.francobachot.com.br/legislacao-sanitaria-conheca-as-principais-regras-da-anvisa/" target="_blank">Regras</a></li>
                 </ul>
             <!-- Div redes sociais -->
             </div>
@@ -241,8 +234,10 @@
     
     </footer>
     </section>
-    <script src="./js/script.js"></script>
-    <script src="./js/botao_menu.js"></script>
-    <script src="./js/aparecer.js"></script>
+
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/botao_menu.js"></script>
+    <script src="./src/js/aparecer.js"></script>
+
 </body>
 </html>

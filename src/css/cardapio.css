@@ -18,7 +18,7 @@
 
     --fonte-principal: "Poppins";
 
-    --blur: rgba(255,255,255,0.4)
+    --blur: rgba(255,255,255,0.4);
 }
 
 body::-webkit-scrollbar {

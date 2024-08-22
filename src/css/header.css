@@ -14,7 +14,7 @@
     position: relative;
 }
 .trilho .indicador {
-    background: url(../assets/icones/moon-cloud-star-icon-with-black-background-moonlight-flat-icon-vector-illustration_739746-57.avif);
+    background: url("../assets/icones/imagem-trilho-dark.avif");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 .navegacao_link {
     position: relative;
     text-decoration: none;
-    color: var(--cor-tercearia);
+    color: var(--cor-fonte);
     font-family: var(--fonte-principal);
     padding: 1em 1.5em;
     margin: 1em;
@@ -53,7 +53,7 @@
     bottom: 13px;
     left: 15px;
     width: 0%;
-    background-color: white;
+    background-color: var(--cor-fonte);
     transition: 0.6s ease-in-out;
 }
 
@@ -154,7 +154,7 @@
 .trilho.dark .indicador {
     left: 30px;
     background-color: rgb(112, 112, 112);
-    background: url(../assets/icones/if-weather-2-2682849_90781.webp);
+    background: url("../assets/icones/imagem-trilho-light.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,5 +172,4 @@
 
 #nav.dark .navegacao_link::after {
     background-color: black;
-
 }

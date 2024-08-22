@@ -42,7 +42,6 @@ footer i {
     padding-bottom: 1em;
     transition: 0.2s ease-in-out;
     cursor: default;
-    
 }
 .titulo_footer:hover {
     transform: scale(1.07);
@@ -65,7 +64,7 @@ footer li {
 
 .box_link {
     text-decoration: none;
-    color: var(--cor-tercearia);
+    color: var(--cor-fonte);
     transition: all .4s ease;
 }
 .box_link:hover{
@@ -118,4 +117,8 @@ footer li {
     color: black;
     margin: 0;
     padding: 100px;
+}
+
+.titulo_footer.dark {
+    color: black;
 }

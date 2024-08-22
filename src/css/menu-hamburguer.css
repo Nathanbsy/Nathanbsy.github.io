@@ -1,7 +1,7 @@
 .link_hamburguer {
     position: relative;
     text-decoration: none;
-    color: var(--cor-tercearia);
+    color: var(--cor-fonte);
     font-family: var(--fonte-principal);
     margin: 1em;
     font-size: 20px;
@@ -13,7 +13,7 @@
     align-items: center;
     margin: 0;
     z-index: 100;
-    background-color: var(--cor-principal);
+    background-color: var(--background-cor2);
     border: none;
 }
 
@@ -24,7 +24,7 @@
     left: -250px;
     width: 170px;
     height: 100%;
-    background-color: var(--cor-principal);
+    background-color: var(--background-cor2);
     transition: all 0.3s ease;  
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
     .linha {
         width: 40px;
         height: 2px;
-        background-color: white;
+        background-color: var(--cor-fonte);
         display: block;
         margin: 10px auto;
         transform-origin: center;

@@ -7,19 +7,30 @@
 @import url("./menuprincipal.css");
 @import url("./login.css");
 @import url("./menu-hamburguer.css");
-@import url("./carrossel.css");
 @import url("./sec1.css");
 
 :root {
-
-    --cor-principal: #151515;
-    --cor-secundaria: #411515;
-    --cor-tercearia: #F8F8F8;
-    --cor-quatro: #373A40;
+    --background-cor1: #000000;
+    --background-cor2: #151515;
+    --cor-fonte: #F0F0F0;
+    --vermelho: #411515;
+    --gradiente: linear-gradient(300deg, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.9));
 
     --fonte-principal: "Poppins";
 
-    --blur: rgba(255,255,255,0.4)
+    --blur: rgba(255,255,255,0.4);
+}
+
+.light-mode:root {
+    --background-cor1: #FFFFFF;
+    --background-cor2: #151515;
+    --cor-fonte: #000000;
+    --vermelho: #411515;
+    --gradiente: linear-gradient(300deg, rgba(0, 0, 0, 0.9),rgba(10, 10, 10, 0.9));
+
+    --fonte-principal: "Poppins";
+
+    --blur: rgba(255,255,255,0.4);
 }
 .hidden {
     opacity: 0;
@@ -48,11 +59,12 @@
 }
 
 body {
-    background-color: black;
-    color: var(--cor-tercearia);
+    background-color: var(--background-cor1);
+    color: var(--cor-links);
     font-family: var(--fonte-principal);
     scroll-behavior: smooth;
     transition: .4s;
+    color: white;
 }
 
 body, html {
@@ -64,13 +76,13 @@ body::-webkit-scrollbar {
 }
   
 body::-webkit-scrollbar-track {
-    background-color: var(--cor-principal);    
+    background-color: var(--background-cor2);    
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: var(--cor-quatro);
+    background-color: #c0c0c0;
     border-radius: 20px;   
-    border: 3px solid var(--cor-principal);
+    border: 3px solid var(--background-cor2);
 }
 
 *, html {

@@ -2,7 +2,7 @@
 
 .historia {
     padding: 5em 25vw 0;
-    background-image: url(../assets/icones/historia.webp);
+    background-image: url("../assets/icones/imagem-historia.webp");
     background-size: cover;
     background-position: center;
     font-family: var(--fonte-principal);

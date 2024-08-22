@@ -17,13 +17,14 @@ let nav = document.getElementById("nav");
 let sec1 = document.getElementById("sec1");
 let body = document.querySelector("body");
 let menu = document.getElementById("section_menu");
-let reserva = document.getElementById('section_reserva');
-let local = document.getElementById('local');
+let reserva = document.getElementById("section_reserva");
+let local = document.getElementById("local");
 let linhas = document.getElementById("tachovendohamburguer3");
 let fundoH = document.getElementById("menuHamburguer");
 let listaH = document.getElementById("listaH");
 let listaFooter = document.querySelectorAll("#listaFooter");
 let textoFormulario = document.getElementById("form_reserva");
+let footerdark = document.querySelectorAll(".titulos_footer");
 
 trilho.addEventListener("click", () => {
     let i = 0;
@@ -31,6 +32,7 @@ trilho.addEventListener("click", () => {
         listaFooter[i].classList.toggle("numero");
         i = i + 1;
     }
+
     trilho.classList.toggle("dark");
     nav.classList.toggle("dark");
     sec1.classList.toggle("dark");
@@ -42,4 +44,4 @@ trilho.addEventListener("click", () => {
     fundoH.classList.toggle("muda");
     listaH.classList.toggle("muda2");
     textoFormulario.classList.toggle("dark");
-})
+});

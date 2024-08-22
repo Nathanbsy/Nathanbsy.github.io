@@ -71,6 +71,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    cursor: default;
 }
 
 .menu_prato {
@@ -78,59 +79,68 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 #p1{
-    background: url(../assets/Menu1.jpg);
+    background: url("../assets/imagem-prato-macarrao.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 
 #p2{
-    background: url(../assets/Menu2.jpg);
+    background: url("../assets/imagem-macarrao-verde.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 #p3 {
-    background: url(../assets/Menu3.avif);
+    background: url("../assets/imagem-macarrao-pene.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 #p4{
-    background: url(../assets/Menu4.jpg);
+    background: url("../assets/imagem-prato-carne.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 #p5{
-    background: url(../assets/Menu5.jpg);
+    background: url("../assets/imagem-macarrao.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 #p6{
-    background: url(../assets/Menu6.jpg);
+    background: url("../assets/imagem-lasanha.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 #p7{
-    background: url(../assets/Menu7.jpg);
+    background: url("../assets/imagem-pizza-de.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 #p8{
-    background: url(../assets/menu8.avif);
+    background: url("../assets/imagem-pizza-molho.avif");
     background-position: center;
-    filter: brightness(0.6w);
+    filter: brightness(0.6);
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: default;
 }
 
-main #btnLeiaMais {
+#btnLeiaMais {
     margin-top: 3em;
     padding: 15px 30px;
     border-radius: 20px;
@@ -180,6 +190,10 @@ main #btnLeiaMais {
         display: none;
     }
 
+    #inv {
+        display: none;
+    }
+
     .tudo_conteiner_menu {
         gap: 1.5em;
         margin-right: 0.5em;
@@ -187,6 +201,9 @@ main #btnLeiaMais {
 }
 @media screen and (min-width: 0px) and (max-width: 800px) {
     #p1, #p5, #p4, #p8 {
+        display: none;
+    }
+    #inv {
         display: none;
     }
 }
