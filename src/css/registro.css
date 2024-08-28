@@ -4,7 +4,7 @@
 body {
     background: url("../assets/imagem-background-login.jpg");
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .header_login {
@@ -156,5 +156,10 @@ button {
     .box_inteira .h2_reserva {
         padding: 1em;
         margin: 0.5em;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 428px) {
+    form {
+        width: 50%;
     }
 }
