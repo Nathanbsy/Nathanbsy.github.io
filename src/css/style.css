@@ -21,17 +21,6 @@
     --blur: rgba(255,255,255,0.4);
 }
 
-.light-mode:root {
-    --background-cor1: #FFFFFF;
-    --background-cor2: #151515;
-    --cor-fonte: #000000;
-    --vermelho: #411515;
-    --gradiente: linear-gradient(300deg, rgba(0, 0, 0, 0.9),rgba(10, 10, 10, 0.9));
-
-    --fonte-principal: "Poppins";
-
-    --blur: rgba(255,255,255,0.4);
-}
 .hidden {
     opacity: 0;
 }

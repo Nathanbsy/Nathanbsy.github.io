@@ -1,10 +1,13 @@
 .navegacao {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    height: 150px;
     align-items: center;
     position: relative;
     z-index: 100;
+    justify-items: center;
 }
+
 .trilho {
     background-color: gray;
     height: 40px;
@@ -47,7 +50,6 @@
 }
 
 .navegacao_link::after {
-    position: absolute;
     content: " ";
     height: 2px;
     bottom: 13px;
@@ -62,54 +64,41 @@
 }
 
 .logo {
-    display: block;
-    justify-content: right;
+   width: 130px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
 }
 
 .logo_nav {
     width: 30%;
-    margin-left: 20px;
-}
-
-
-@media screen and (min-width: 720px) and (max-width: 1020px) {
-    .logo_nav {
-        display: none;
-    }
-    .navegacao {
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
-    }
-    .navegacao_link {
-        padding: 1em 0.5em;
-        font-size: 20px;
-    }
-
-    .trilho {
-        margin-top: 6em;
-    }
-
 }
 
 
 @media screen and (min-width: 1024px) and (max-width: 1728px) {
     .navegacao {
-        position: fixed;
         width: 100%;
         z-index: 100;
     }
 
     .logo_nav {
         width: 35%;
-        margin: 1em;
     }
 
     .trilho {
-        margin-left: 5em;
+       align-self: center;
+       justify-self: center;
+    }
+
+    .logo{
+        justify-self: center;
+        align-self: center;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1150px) {
     .navegacao_link {
         display: none;
     }
@@ -124,7 +113,6 @@
         position: fixed;
         width: 100%;
         z-index: 100;
-        margin-top: 1em;
     }
 
     .logo {
@@ -142,11 +130,8 @@
     .logo {
         display: none;
     }
-    .navegacao {
-        margin-top: 1em;
-    }
-
 }
+
 /* MODO ESCURO */
 .trilho.dark {
     background-color: rgb(221, 213, 139);

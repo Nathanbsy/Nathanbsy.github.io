@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 2em;
-    margin-top: 4.75em;
+    margin-top: 8em;
 }
 
 .menu_hamburguer, .visivel {
@@ -44,7 +44,8 @@
 .invisivel {
     left: -250px;
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
     .linha {
         width: 40px;
         height: 2px;
@@ -86,5 +87,11 @@
     .lista_menu {
         padding: 1em 0;
         margin: 0 0.5em;
-    }   
+    }  
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .navegacao {
+        gap: 20%
+    }
 }

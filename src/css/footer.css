@@ -89,8 +89,6 @@ footer li {
     .titulo_footer {
         font-size: 26px;
     }
-
-   
 }
 @media screen and (min-width: 0px) and (max-width: 500px) {
     .redes_sociais {
@@ -108,6 +106,21 @@ footer li {
         width: auto;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .local_container iframe {
+        width: 100%;
+    }
+
+    .box_footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+        gap: 0.5em;
+        margin-left: 0;
     }
 }
 /* MODO CLARO */

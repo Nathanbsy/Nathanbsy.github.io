@@ -17,9 +17,8 @@ body {
     color: var(--cor-fonte);
     font-weight: 400;
     text-decoration: none;
-
-
 }
+
 .navegacao_link1::before {
     content: " ";
     width: 0;
@@ -57,7 +56,6 @@ body {
     font-family: 'Poppins';
     justify-content: center;
     margin-top: 10vh;
-
 }
 
 

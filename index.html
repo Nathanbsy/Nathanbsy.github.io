@@ -26,7 +26,7 @@
             </div>
         </button>
         <div class="logo">
-            <a href="#"><img class="logo_nav" src="./src/assets/icones/imagem-logo-secundaria.png" alt=""></a>
+            <a href="#" class="logo-img"><img class="logo_nav" src="./src/assets/icones/imagem-logo-secundaria.png" alt=""></a>
         </div>
         <ul class="nav_site">
             <li><a class="navegacao_link" href="#">Home</a>
@@ -35,11 +35,9 @@
             <li><a class="navegacao_link" href="./registro.html">Registro</a></li>
             <li><a class="navegacao_link" href="#section_historia">História</a></li>
         </ul>
-        <div>
             <div id="trilho" class="trilho">
                 <div class="indicador"></div>
             </div>
-        </div>
         <aside id="menuHamburguer" class="menu_hamburguer invisivel">
             <ul id="listaH" class="lista_hamburguer">
                 <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="#">Home</a></li>
@@ -56,12 +54,10 @@
             <img id="alface1" src="./src/assets/imagem-alface.png" style="animation: fade3 6s ease infinite; width: 400px;top: 300px; left: -120px; position: absolute;"  alt="">
             <a style="color: white;" href=""><i class="bi bi-instagram"></i></a>
             <a style="color: white;" href="https://wa.me/5555119515655?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank"><i class="bi bi-whatsapp"></i></a>
-            
         </div>
         <div class="centro_sec1 hidden">
-            
-            <h1> <span style="color: rgb(62, 184, 62);">La P</span><span class="mano" id="letrasec1branca" >all</span><span style="color: rgb(177, 51, 51);">azo</span></h1>
-            <img src="./src/assets/imagem-macarrao-intro.png" alt="">
+            <h1 class="lapallazo"> <span style="color: rgb(62, 184, 62);">La P</span><span class="mano" id="letrasec1branca" >all</span><span style="color: rgb(177, 51, 51);">azo</span></h1>
+            <img class="macarrao" src="./src/assets/imagem-macarrao-intro.png" alt="">
         </div>
         <div class="textos_sec1 hidden">
             <img id="peperonne1" style="animation: fade2 6s ease infinite;width: 400px; display: flex; position: absolute; top: 80px; right: 20px; " src="./src/assets/imagem-pepperone-intro.png" alt="">
@@ -139,10 +135,11 @@
                 </div>
             </div>
                 </span>
-                <div class="div_botao_menu">
-                    <button onclick="verMais()" id="btnLeiaMais" class="maisTexto">LEIA MAIS</button>
-                </div>
+                
         </section>
+        <div class="div_botao_menu">
+            <button onclick="verMais()" id="btnLeiaMais" class="maisTexto">LEIA MAIS</button>
+        </div>
         <!-- História -->
         <section id="section_historia" class="historia ">
             <div class="container_historia hidden">
@@ -154,7 +151,7 @@
         <!-- SEÇÃO PARA A RESERVA -->
         <section id="section_reserva" class="reserva">
             <!-- FORMULARIO DA RESERVA -->
-            <form class="reserva_from hidden" method="post" action="mailto:" enctype="text/plain">
+            <form class="reserva_from hidden" method="post" action="mailto:nathan.silva163@etec.sp.gov.br" enctype="text/plain">
                 <div class="h2_reserva">
                     <h2>Faça sua <span class="h2_diferente_reserva">reserva</span></h2>
                 </div>

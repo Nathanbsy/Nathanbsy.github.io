@@ -73,3 +73,14 @@
         height: 90vh;
     }
 }
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .historia_texto {
+        font-size: 14px;
+    }
+
+    .container_historia {
+        padding: 1em;
+        height: 70vh;
+    }
+}
