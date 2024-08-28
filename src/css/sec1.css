@@ -180,18 +180,26 @@ body.dark {
     }
     
     .centro_sec1 img {
-        width: 29em;
+        width: 22em;
         margin-left: 2.5em;
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 1150px){
+@media screen and (min-width: 630px) and (max-width: 1000px){
     .centro_sec1 h1 {
-        font-size: 1000%;
+        font-size: 20vw;
     }
+}
+@media screen and (min-width: 300px) and (max-width: 630px){
+    .centro_sec1 h1 {
+        font-size: 50vw;
+    }
+}
 
+@media screen and (min-width: 300px) and (max-width: 1150px){
     .centro_sec1 img {
-        width: 25em;
+        width: auto;
+        max-width: 500px;
         margin-left: 2.5em;
     }
     .logos_sec1{
