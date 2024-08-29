@@ -154,6 +154,7 @@
     font-family: var(--fonte-principal);
     font-weight: 600;
     cursor: pointer ;
+    box-shadow: 0 0 5px 0 black;
 }
 
 #vermais {
@@ -224,7 +225,7 @@
     background-color: white;
     color: black;
 }
-.menu.dark #btnLeiaMais {
+.maisTexto.dark{
     background-color: black;
     color: white;
 }

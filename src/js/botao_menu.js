@@ -25,6 +25,7 @@ let listaH = document.getElementById("listaH");
 let listaFooter = document.querySelectorAll("#listaFooter");
 let textoFormulario = document.getElementById("form_reserva");
 let footerdark = document.querySelectorAll(".titulos_footer");
+let botaoMenu = document.getElementById("btnLeiaMais");
 
 trilho.addEventListener("click", () => {
     let i = 0;
@@ -43,5 +44,5 @@ trilho.addEventListener("click", () => {
     linhas.classList.toggle("preto");
     fundoH.classList.toggle("muda");
     listaH.classList.toggle("muda2");
-    textoFormulario.classList.toggle("dark");
+    botaoMenu.classList.toggle("dark");
 });
