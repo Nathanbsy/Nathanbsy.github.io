@@ -50,12 +50,13 @@
 }
 
 .navegacao_link::after {
+    position: absolute;
     content: " ";
     height: 2px;
     bottom: 13px;
     left: 15px;
     width: 0%;
-    background-color: var(--cor-fonte);
+    background-color: white;
     transition: 0.6s ease-in-out;
 }
 
@@ -79,6 +80,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1728px) {
     .navegacao {
+        
         width: 100%;
         z-index: 100;
     }

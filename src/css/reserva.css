@@ -130,7 +130,7 @@ form input, i {
 }
 
 @media screen and (min-width: 0px) and (max-width: 300px){
-    form {
+    form{
         width: 100%;
     }
 }
@@ -154,7 +154,6 @@ form input, i {
     flex-direction: column;
     align-items: center;
     align-self: center;
-
 }
 .reserva.dark form span {
     color: red;
