@@ -66,11 +66,14 @@
 }
 
 .menu_prato_tras {
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(71, 27, 27);
     transform: rotateY(180deg);
     justify-content: center;
+    gap: 20px;
     align-items: center;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     cursor: default;
 }
 

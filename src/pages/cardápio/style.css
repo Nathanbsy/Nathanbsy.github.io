@@ -8,13 +8,10 @@
 }
 
 
-
 body {
     background-color: rgb(10, 10, 10);
     color: white;
     font-family: 'poppins';
-    overflow-x: hidden;
-    width: 100%;
 }
 .hidden {
     opacity: 0;
@@ -176,8 +173,7 @@ nav img {
 }
 
 .texto1_sec2 {
-    width: 500px;
-    
+    width: 500px; 
 }
 .texto1_sec2 h1 {
     margin-bottom: 50px;
@@ -483,9 +479,6 @@ footer li {
         padding: 1em 0;
         margin: 0 0.5em;
     } 
-    .body {
-        overflow-y: hidden;
-    }  
 }
 @media  screen and (min-width: 0px) and (max-width: 1025px) {
     .box_imagem {
@@ -504,10 +497,6 @@ footer li {
         background-size: cover;
         
     }
-    .body {
-        overflow-y: hidden;
-    }
-    
 }
 @media  screen and (min-width: 0px) and (max-width: 1120px) {
     .box1, .box2, .box3 {
@@ -516,16 +505,10 @@ footer li {
     .sec3 {
         height: 150vh;
     }
-    .body {
-        overflow-y: hidden;
-    }
 }
 @media  screen and (min-width: 0px) and (max-width: 624px) {
     .textosnav {
         display: none;
-    }
-    .body {
-        overflow-y: hidden;
     }
 }
 @media  screen and (min-width: 0px) and (max-width: 550px) {
@@ -551,24 +534,15 @@ footer li {
     #div1, #div2, #div3 {
         max-height: 0;
     }
-    .body {
-        overflow-y: hidden;
-    }
 }
 @media  screen and (min-width: 0px) and (max-width: 624px) {
     .textosnav {
         display: none;
     }
-    .body {
-        overflow-y: hidden;
-    }
 }
 @media  screen and (min-width: 0px) and (max-width: 4340x) {
     .textosnav {
         display: none;
-    }
-    .body {
-        overflow-y: hidden;
     }
 }
 
@@ -586,4 +560,11 @@ footer li {
     border-radius: 50%;
     font-size: 30px;
     opacity: 1;
+}
+
+@media screen and (min-width: 0px) and (max-width: 410px) {
+    .textos_sec1{
+        width: auto;
+        margin-top: 5.5em;
+    }
 }
