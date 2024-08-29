@@ -1,7 +1,7 @@
 .navegacao {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    height: 150px;
+    height: 120px;
     align-items: center;
     position: relative;
     z-index: 100;

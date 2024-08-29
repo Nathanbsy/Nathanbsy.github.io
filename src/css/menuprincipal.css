@@ -8,6 +8,10 @@
     transition: .4s;
 }
 
+.nome_prato {
+    color: var(--cor-fonte);
+}
+
 .menu_titulo {
     font-size: 34px;
     font-weight: 700;
@@ -144,7 +148,6 @@
 }
 
 #btnLeiaMais {
-    margin-top: 3em;
     padding: 15px 30px;
     border-radius: 20px;
     border: none;
@@ -163,7 +166,7 @@
 }
 
 .maisTexto {
-    margin: 0 auto;
+    margin: 0 1em auto;
 }
 
 .div_botao_menu {
