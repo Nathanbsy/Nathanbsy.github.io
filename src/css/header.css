@@ -80,9 +80,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1728px) {
     .navegacao {
-        
         width: 100%;
-        z-index: 100;
     }
 
     .logo_nav {
