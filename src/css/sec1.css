@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.lapallazo {
+    cursor: default;
+}
+
 .sec1 {
     display: flex;
     justify-content: space-between;
